@@ -4,12 +4,18 @@
 */
 public class MyExample {
 
-    private string age;
+    private Integer age;
     private String name;
 
     private List<String> hobbies;
 
-    public MyExample(String name) {
+    public MyExample(String name, Integer age, List<String> hobbies) {
+        this.age = age;
+        this.name = name;
+        this.hobbies = hobbies;
+    }
+
+    public MyExample(String name, Integer age) {
         this.age = age;
         this.name = name;
         this.hobbies = new List<String>();
@@ -17,6 +23,19 @@ public class MyExample {
 
     public String addHobby(String hobby) {
         this.hobby.add(hobby);
+    }
+
+    public String giveUpOnHobby(String hobby) {
+        Integer removeIndex;
+        for(Integer i = 0; i < hobbies.size(); i ++) {
+            if(hobbies[i] == hobby) {
+                removeIndex = i;
+                break;
+            }
+        }
+        if(removeIndex != null) {
+            this.hobby.remove(removeIndex);
+        }
     }
 
     public String getName() {
