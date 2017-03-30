@@ -1,9 +1,19 @@
+/**
+ *
+ * Exmaple merge issues
+ *
+ * YAY! We are forcing "breaking changes" in this file
+ */
 public class MyExample {
 
     private String name;
 
-    public MyExample() {
+
+    private Integer age;
+
+    public MyExample(Integer age) {
         this.name = name;
+        this.age = age;
     }
 
 
@@ -17,6 +27,7 @@ public class MyExample {
 
     public String print() {
         System.debug('My name is ' + this.name);
+        System.debug('I am ' + this.age + ' years old');
     }
 
 }
