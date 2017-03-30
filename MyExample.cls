@@ -11,7 +11,7 @@ public class MyExample {
 
     private Integer age;
 
-    public MyExample(Integer age) {
+    public MyExample(Integer age, String name) {
         this.name = name;
         this.age = age;
     }
@@ -21,8 +21,16 @@ public class MyExample {
         return this.name;
     }
 
-    public String setName(String name) {
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getAge() {
+        return this.age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public String print() {
