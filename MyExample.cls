@@ -1,5 +1,6 @@
 /**
 * This class is used for an example to show hot to resolve merge conflicts
+* This class will be used as an example in the classroom on merge conflicts
 * We are forcing "breaking changes"
 */
 public class MyExample {
